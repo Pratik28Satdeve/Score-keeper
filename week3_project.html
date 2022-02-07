@@ -1,0 +1,263 @@
+<html>
+<head>
+	<title> </title>
+
+	<script>
+		function runplusA(){
+			var runs=parseInt(document.getElementById("runA").innerHTML);
+			runs++;
+			document.getElementById("runA").innerHTML=runs;
+			}	
+		function runminusA(){
+			var runs=parseInt(document.getElementById("runA").innerHTML);
+			runs--;
+			document.getElementById("runA").innerHTML=runs;
+			}	
+
+		function wicplusA(){
+			var wics=parseInt(document.getElementById("wicA").innerHTML);
+			wics++;
+			document.getElementById("wicA").innerHTML=wics;
+			}	
+		function wicminusA(){
+			var wics=parseInt(document.getElementById("wicA").innerHTML);
+			wics--;
+			document.getElementById("wicA").innerHTML=wics;
+			}	
+
+		function overplusA(){
+			var overs=parseInt(document.getElementById("oversA").innerHTML);
+			overs++;
+			document.getElementById("oversA").innerHTML=overs;
+			}	
+		function overminusA(){
+			var overs=parseInt(document.getElementById("oversA").innerHTML);
+			overs--;
+			document.getElementById("oversA").innerHTML=overs;
+			}
+
+
+	
+
+		function runplusB(){
+			var runs=parseInt(document.getElementById("runB").innerHTML);
+			runs++;
+			document.getElementById("runB").innerHTML=runs;
+			}	
+		function runminusB(){
+			var runs=parseInt(document.getElementById("runB").innerHTML);
+			runs--;
+			document.getElementById("runB").innerHTML=runs;
+			}	
+
+		function wicplusB(){
+			var wics=parseInt(document.getElementById("wicB").innerHTML);
+			wics++;
+			document.getElementById("wicB").innerHTML=wics;
+			}	
+		function wicminusB(){
+			var wics=parseInt(document.getElementById("wicB").innerHTML);
+			wics--;
+			document.getElementById("wicB").innerHTML=wics;
+			}	
+
+		function overplusB(){
+			var overs=parseInt(document.getElementById("oversB").innerHTML);
+			overs++;
+			document.getElementById("oversB").innerHTML=overs;
+			}	
+		function overminusB(){
+			var overs=parseInt(document.getElementById("oversB").innerHTML);
+			overs--;
+			document.getElementById("oversB").innerHTML=overs;
+			}
+			
+		
+	</script>
+	
+	<style>	
+		body{
+			background-image:url('https://c1.wallpaperflare.com/preview/405/810/548/sunset-field-game-stadium.jpg');
+		}
+		.Title{
+			background-color:#99ffcc;
+			color:#003366 ;
+			border-radius:50px 50px 50px 50px;
+			padding:20px;
+			text-align: center;
+			margin-left:200px;
+			margin-right:200px;
+			font-size:50px;
+		}
+		.team-title{
+			background-color: #99ffff;
+			color:#2e2eb8;
+			border-radius:0px 0px 0px 0px;
+			padding:20px;
+			text-align: center;
+			margin-left:800px;
+			margin-right:800px;
+			font-size:30px;
+			height:40px;
+			box-shadow:0px 0px 10px black;
+		
+		}
+
+		
+		.container{
+			display:felx;
+				flex-direction:coloumn;
+				justify-content: space-evenly;
+			
+		}
+
+		.sub-child{
+				display:flex;
+				flex-direction:row;
+				justify-content: space-evenly;
+				border: 1px black solid;
+				width:98%;
+				height:100px;
+				padding:10px;
+				border-radius:25px;
+				box-shadow:0px 0px 10px black;
+				background-color: #FBDA61;
+            			background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+            			transition: 0.3s;
+				opacity:0.7;
+			}
+		.sub-child:hover{
+					 width: 98%;
+           				 height: 120px;
+            				transform: 0.8s;
+            				border: 1px black solid;
+            				padding: 10px;
+           				 margin: 10px;
+           				 border-radius:25px;
+           				 box-shadow: 0px 0px 20px white;
+           				 background-color: #FBDA61;
+           				 background-image: linear-gradient(45deg, #FBDA61 0%, #FF5ACD 100%);
+		}
+		
+		.inner{
+			border: 1px black solid;
+			font-size:30px;
+			background-color: #d580ff;
+			border-radius:25px;
+			height:50px;
+			width:100px;
+			padding:10px;
+		}
+			
+	</style>
+
+</head>
+<body>
+	<h1 class="Title">FAN CRICKET</h1>
+	<h1>1<sup>st</sup> Innings</h1>
+
+	<div class="container">
+
+		<div class="child">
+		<h2 class="team-title">Team A</h2>
+		</div>
+			<div class="sub-child">
+				
+				<div class="inner">
+				Runs
+				</div>
+				<div>
+				<button id="runIncA" onClick="runplusA()"><img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/></button>
+				</div>
+				<div>
+				<h3 id="runA" class="">0</h3>
+				</div>
+				<div>
+				<button id="runDecA" class="" onClick="runminusA()"><img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/></button>
+				</div>
+
+				<div class="inner">
+				Wickets
+				</div>
+				<div>
+				<button id="wicIncA" onClick="wicplusA()"><img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/></button>
+				</div>
+				<div>
+				<h3 id="wicA" class="">0</h3>
+				</div>
+				<div>
+				<button id="wicDecA" class="" onClick="wicminusA()"><img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/></button>
+				</div>
+				
+				<div class="inner">
+				Overs
+				</div>
+				<div>
+				<button id="overIncA" class="" onClick="overplusA()"><img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/></button>
+				</div>
+				<div>
+				<h3 id="oversA" class="">0</h3>
+				</div>
+				<div>
+				<button id="overDecA" class="" onClick="overminusA()"><img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/></button>
+				</div>
+
+
+
+			</div>
+		<div class="child">
+		<h1>2<sup>nd</sup> Innings</h1>
+		<h2 class="team-title">Team B</h2>
+		</div>
+			<div class="sub-child">
+			
+				<div class="inner">
+				Runs
+				</div>
+				<div>
+				<button id="runIncB" class="" onClick="runplusB()"><img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/></button>
+				</div>
+				<div>
+				<h3 id="runB" class="">0</h3>
+				</div>
+				<div>
+				<button id="runDecB" class="" onClick="runminusB()"><img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/></button>
+				</div>
+
+				<div class="inner">
+				Wickets
+				</div>
+				<div>
+				<button id="wicIncB" class="" onClick="wicplusB()">
+				<img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/>
+				</button>
+				</div>
+				<div>
+				<h3 id="wicB" class="">0</h3>
+				</div>
+				<div>
+				<button id="wicDecB" class="" onClick="wicminusB()">
+				<img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/>
+				</button>
+				</div>
+				
+				<div class="inner">
+				Overs
+				</div>
+				<div>
+				<button id="overIncB" class="" onClick="overplusB()">
+				<img src="https://www.pngfind.com/pngs/m/30-303872_image-result-for-arrow-up-button-green-top.png" height="40px"/>
+				</button>
+				</div>
+				<div>
+				<h3 id="oversB" class="">0</h3>
+				</div>
+				<div>
+				<button id="overDecB" class="" onClick="overminusB()"><img src="https://image.pngaaa.com/420/180420-middle.png" height="40px"/></button>
+				</div>
+
+		</div>
+
+	</div>
+</body>
+</html>
